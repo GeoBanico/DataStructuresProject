@@ -1,0 +1,26 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=32d9151b_002Dd2ee_002D4aff_002Da59d_002Dfe50602d9df3/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="StringToList_ThreeTerms_Test" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::C2131714-EED4-4C26-8DBD-7B529A7E4FF4::.NETCoreApp,Version=v3.1::Banico_DataStruct_FinalProject.Tests.SPSTest.StringToList_ThreeTerms_Test&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=59c9eac7_002D724f_002D4036_002Db0b9_002D2b16d170163c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="StringToList_ThreeTerms_Test #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::C2131714-EED4-4C26-8DBD-7B529A7E4FF4::.NETCoreApp,Version=v3.1::Banico_DataStruct_FinalProject.Tests.SPSTest.StringToList_ThreeTerms_Test&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=636948c5_002Daf6e_002D4fe9_002Db7b7_002D8def63d01bdc/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="TeXTestConverter_simpleDiv_Division" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::C2131714-EED4-4C26-8DBD-7B529A7E4FF4::.NETCoreApp,Version=v3.1::Banico_DataStruct_FinalProject.Tests.TeXTest.LaTeXTestConverter_simpleDiv_Division&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=a0a5d863_002D7eb6_002D4400_002Da833_002D16c4ce18e79d/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="NegativeExpression" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::C2131714-EED4-4C26-8DBD-7B529A7E4FF4::.NETCoreApp,Version=v3.1::Banico_DataStruct_FinalProject.Tests.NumTest.NegativeExpression&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=efe71b5f_002D8df5_002D4f80_002Dbf5e_002D7153f20d405f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="StringToList_ThreeTerms_Test #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::C2131714-EED4-4C26-8DBD-7B529A7E4FF4::.NETCoreApp,Version=v3.1::Banico_DataStruct_FinalProject.Tests.SPSTest.StringToList_ThreeTerms_Test&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

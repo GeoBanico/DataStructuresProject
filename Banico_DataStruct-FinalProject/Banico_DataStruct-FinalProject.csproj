@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Banico_DataStruct_FinalProject</RootNamespace>
+    <UseWPF>true</UseWPF>
+    <StartupObject>Banico_DataStruct_FinalProject.App</StartupObject>
+    <ApplicationIcon>sample.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="f887648d5dabff73f97e5ce2c44e1aed.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentAssertions" Version="5.10.3" />
+    <PackageReference Include="MaterialDesignColors" Version="1.2.7" />
+    <PackageReference Include="MaterialDesignThemes" Version="3.2.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.8.3" />
+    <PackageReference Include="NUnit" Version="3.12.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.17.0" />
+    <PackageReference Include="System.Drawing.Common" Version="5.0.0" />
+    <PackageReference Include="WpfMath" Version="0.9.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="f887648d5dabff73f97e5ce2c44e1aed.png" />
+  </ItemGroup>
+
+</Project>

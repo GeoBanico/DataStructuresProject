@@ -1,0 +1,28 @@
+﻿<Window x:Class="Banico_DataStruct_FinalProject.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Banico_DataStruct_FinalProject"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:controls="clr-namespace:WpfMath.Controls;assembly=WpfMath"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal" 
+        TextOptions.TextRenderingMode="Auto"        
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        Title="MainWindow" Height="370" Width="600" ResizeMode="CanMinimize" WindowStyle="ThreeDBorderWindow" SizeToContent="WidthAndHeight" Topmost="True" WindowStartupLocation="CenterScreen" ShowInTaskbar="False">
+    <Grid Background="White">
+        <TextBox Name="txtEq" Text=""  HorizontalAlignment="Left" Margin="221,24,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="234" SelectionChanged="txtEq_SelectionChanged"/>
+        <Button Name="btnSolve" Content="=" HorizontalAlignment="Left" Margin="459,24,0,0" VerticalAlignment="Top" Height="22" Width="36" Click="btnSolve_Click"/>
+        <TextBox HorizontalAlignment="Left" Margin="221,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="286" FontWeight="Bold" IsEnabled="False"/>
+        <Grid Background="DimGray" HorizontalAlignment="Left" Height="82" Margin="220,83,0,0" VerticalAlignment="Top" Width="286"/>
+        <Image Name="imgEqDisplay" HorizontalAlignment="Left" Height="58" Margin="233,97,0,0" VerticalAlignment="Top" Width="264"/>
+        <Grid Background="DimGray" HorizontalAlignment="Left" Height="84" Margin="220,189,0,0" VerticalAlignment="Top" Width="286"/>
+        <Image Name="imgEndEqDisplay" HorizontalAlignment="Left" Height="56" Margin="233,203,0,0" VerticalAlignment="Top" Width="264"/>
+        <Label Name="lblFormat" Content="-----" HorizontalAlignment="Left" Margin="224,52,0,0" VerticalAlignment="Top" FontSize="10"/>
+    </Grid>
+</Window>

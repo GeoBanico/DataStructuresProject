@@ -1,0 +1,68 @@
+﻿<Window x:Class="Banico_DataStruct_FinalProject.SimplePolynomialSolver"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Banico_DataStruct_FinalProject"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:controls="clr-namespace:WpfMath.Controls;assembly=WpfMath"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal" 
+        TextOptions.TextRenderingMode="Auto"        
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        Title="MathGeo - Simple Polynomial Solver" Height="407" Width="800" SizeToContent="WidthAndHeight" WindowStyle="SingleBorderWindow" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <TextBox Name="TxtEq1" HorizontalAlignment="Left" Margin="208,68,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" SelectionChanged="TxtEq1_SelectionChanged" FontSize="14" FontFamily="Arial"/>
+        <ComboBox Name="CmbOperation" HorizontalAlignment="Left" Margin="432,66,0,0" VerticalAlignment="Top" Width="36" FontSize="20" FontWeight="Bold" FontFamily="Arial Rounded MT Bold" DropDownClosed="CmbOperation_DropDownClosed">
+            <ComboBoxItem>+</ComboBoxItem>
+            <ComboBoxItem>-</ComboBoxItem>
+            <ComboBoxItem>*</ComboBoxItem>
+            <ComboBoxItem>/</ComboBoxItem>
+        </ComboBox>
+        <TextBox Name="TxtEq2" HorizontalAlignment="Left" Margin="506,68,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="186" SelectionChanged="TxtEq2_SelectionChanged" FontSize="14" FontFamily="Arial"/>
+        <Button Name="BtnSolve" Content="=" HorizontalAlignment="Left" Margin="718,72,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" SnapsToDevicePixels="True" Width="44" FontSize="15" FontFamily="Arial" Click="BtnSolve_Click" Foreground="White" Height="23" IsEnabled="False"/>
+        <Grid HorizontalAlignment="Left" Height="420" VerticalAlignment="Center" Width="147" Background="#FFEE1D1D">
+            <Image HorizontalAlignment="Center" Height="127" Margin="0,9,0,0" VerticalAlignment="Top" Width="181" Source="/f887648d5dabff73f97e5ce2c44e1aed.png" Stretch="Fill"/>
+            <Label HorizontalAlignment="Center" Margin="0,122,0,0" Content="MathGeo" VerticalAlignment="Top" FontSize="30" FontFamily="Bahnschrift" FontWeight="Bold" FontStyle="Normal" Foreground="#FFFBFBFB"/>
+            <Label Content="*Addition" HorizontalAlignment="Left" Margin="31,296,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift Light Condensed" FontWeight="Bold" FontStyle="Normal" Foreground="#FFFBFBFB" FontSize="17"/>
+            <Label Content="Polynomial" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Bahnschrift SemiBold Condensed" FontWeight="Bold" FontStyle="Normal" Foreground="#FFFBFBFB" FontSize="22" Margin="31,217,0,0"/>
+            <Label Content="-includes-" HorizontalAlignment="Center" Margin="0,267,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift Light Condensed" FontWeight="Normal" FontStyle="Italic" Foreground="#FFFBFBFB" FontSize="15"/>
+            <Label Content="Manipulation" HorizontalAlignment="Center" VerticalAlignment="Top" FontFamily="Bahnschrift SemiBold Condensed" FontWeight="Bold" FontStyle="Normal" Foreground="#FFFBFBFB" FontSize="22" Margin="0,238,0,0"/>
+            <Label Content="*Subtraction" HorizontalAlignment="Left" Margin="31,318,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift Light Condensed" FontWeight="Bold" FontStyle="Normal" Foreground="#FFFBFBFB" FontSize="17"/>
+            <Label Content="*Multiplication" HorizontalAlignment="Left" Margin="31,340,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift Light Condensed" FontWeight="Bold" FontStyle="Normal" Foreground="#FFFBFBFB" FontSize="17"/>
+            <Label Content="*Division" HorizontalAlignment="Left" Margin="31,362,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift Light Condensed" FontWeight="Bold" FontStyle="Normal" Foreground="#FFFBFBFB" FontSize="17"/>
+        </Grid>
+
+        <Grid HorizontalAlignment="Left" Height="80" Margin="210,136,0,0" VerticalAlignment="Top" Width="480" Background="#FFD1D1D1"/>
+        <Image Name="ImgPreEq1" HorizontalAlignment="Left" Height="40" Margin="222,160,0,0" VerticalAlignment="Top" Width="210" Stretch="Uniform" StretchDirection="Both"/>
+        <Image Name="ImgPreEq2" HorizontalAlignment="Left" Height="40" Margin="468,160,0,0" VerticalAlignment="Top" Width="210" Stretch="Uniform" StretchDirection="Both"/>
+        <TextBox HorizontalAlignment="Left" Margin="210,204,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="480" FontWeight="Bold" IsEnabled="False"/>
+        <Grid HorizontalAlignment="Left" Height="80" Margin="214,244,0,0" VerticalAlignment="Top" Width="478" Background="#FFD1D1D1"/>
+        <Image Name="ImgPost"  HorizontalAlignment="Left" Height="40" Margin="245,275,0,0" VerticalAlignment="Top" Width="439" Stretch="Uniform" StretchDirection="Both"/>
+        <Grid HorizontalAlignment="Center" Height="24" VerticalAlignment="Top" Width="800" Background="#FFEE1D1D"/>
+        <Label  Name="LblFormat" Content="- - - - -" HorizontalAlignment="Left" Margin="520,98,0,0" VerticalAlignment="Top" FontSize="10" Width="172"/>
+        <Grid HorizontalAlignment="Left" Height="3" Margin="0,185,0,0" VerticalAlignment="Top" Width="147" Background="#FF464444"/>
+        <Grid HorizontalAlignment="Left" Height="3" Margin="0,193,0,0" VerticalAlignment="Top" Width="147" Background="#FF464444"/>
+        <Grid HorizontalAlignment="Left" Height="419" Margin="147,0,0,0" VerticalAlignment="Top" Width="9" Background="#FF464444" RenderTransformOrigin="0.5,0.5">
+            <Grid.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Grid.RenderTransform>
+        </Grid>
+        <Label Name="LblOp" Content="" HorizontalAlignment="Left" Margin="445,166,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" FontFamily="Arial Rounded MT Bold"/>
+        <Button Content="Quit" HorizontalAlignment="Left" Margin="705,350,0,0" VerticalAlignment="Top" Foreground="White" FontFamily="Bahnschrift" Height="24" Click="Button_Click"/>
+        <Button Name="BtnSwitch" Content="«»" HorizontalAlignment="Left" Margin="422,339,0,0" VerticalAlignment="Top" Height="21" Width="46" Foreground="White" FontFamily="Bahnschrift" IsEnabled="False" Click="Button_Click_1"/>
+        <Label Content="Answer:" HorizontalAlignment="Left" Margin="214,244,0,0" VerticalAlignment="Top" FontSize="15" FontFamily="Bahnschrift"/>
+
+
+
+    </Grid>
+</Window>
